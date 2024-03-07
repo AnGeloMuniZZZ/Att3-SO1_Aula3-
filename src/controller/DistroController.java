@@ -32,7 +32,7 @@ public class DistroController {
 					linha = supLeitor.readLine();
 				}
 				String[] nv = dados.toString().split("=");
-				System.out.println(nv[1]);
+				System.out.println(nv[1].replace("\"", ""));
 			} else {
 				System.out.println("Não é Linux :(");
 			}
